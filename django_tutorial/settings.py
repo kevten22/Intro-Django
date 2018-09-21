@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = [config('ALLOWED_HOSTS')]
 DATABASE_URL = config('DATABASE_URL')
-DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=600)
+
 
 # Application definition
 
@@ -146,3 +146,5 @@ CORS_ORIGIN_ALLOW_ALL = True
 GRAPHENE = {
     'SCHEMA': 'notes.schema.schema',
 }
+
+DATABASES['default'] = dj_database_url.parse(DATABASE_URL, conn_max_age=600)
