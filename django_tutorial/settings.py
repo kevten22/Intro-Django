@@ -146,5 +146,3 @@ CORS_ORIGIN_ALLOW_ALL = True
 GRAPHENE = {
     'SCHEMA': 'notes.schema.schema',
 }
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
